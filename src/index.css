@@ -1,0 +1,60 @@
+.game {
+  
+  display: flex;
+  gap: 20px; /* Odstęp między elementami */
+  align-items: flex-start; /* Wyrównanie do góry */
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  margin: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  height: 275px;
+}
+
+.board-row {
+  width: 200px;
+  display: flex;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid #333;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px; /* Zaokrąglenie rogów */
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.square:active {
+  background-color: #ddd;
+}
+
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.game-info button { 
+  width: 200px;
+  margin-bottom: 5px;
+}
